@@ -9,10 +9,10 @@ ENV GO111MODULE=on \
 	GOPROXY="https://goproxy.cn,direct"
 
 #设置工作目录
-WORKDIR /Users/chenjiayu/Documents/code/practice/wechatAppDemo
+WORKDIR $GOPATH/src/github.com/wechatAppDemo
 
 #将服务器的go工程代码加入到docker容器中
-ADD . $GOPATH/src/github.com/wechatAppDemo
+COPY . $GOPATH/src/github.com/wechatAppDemo
 
 #go构建可执行文件
 RUN go build -o myDemo gin_demo.go

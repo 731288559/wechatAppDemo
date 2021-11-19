@@ -2,7 +2,7 @@ mysql:
   database: test
   addr: 10.0.224.16
   port: 3306
-  user: root
+  username: root
   password: Qwer1234
   # addr: sh-cynosdbmysql-grp-g5tit6du.sql.tencentcdb.com
   # port: 29652

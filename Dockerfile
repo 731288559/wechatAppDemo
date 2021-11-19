@@ -15,7 +15,7 @@ WORKDIR $GOPATH/src/github.com/wechatAppDemo
 COPY . $GOPATH/src/github.com/wechatAppDemo
 
 #go构建可执行文件
-RUN go build -o myDemo gin_demo.go
+RUN go build -o myDemo main.go
 
 #暴露端口
 EXPOSE 8080
